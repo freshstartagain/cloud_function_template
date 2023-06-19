@@ -34,16 +34,16 @@ cd cloud_function_template
 ## Create Function 
 
 ```console
-# create function folder
+# create cf folder
 mkdir functions/<function_name>
 
 # create required file
 touch functions/<function_name>/main.py
 
-# add function package
+# add cf package
 make add-func-pkg pkg=<package_name> func=<function_name>
 
-# run function locally
+# run cf locally
 make run-func func=<function_name>
 ```
 
