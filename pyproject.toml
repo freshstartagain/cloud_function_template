@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cloud-function-template"
+version = "0.1.0"
+description = "A project template for provisioning cloud functions and handling dependencies."
+authors = ["freshstartagain <newstartagainhays@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cloud_function_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+functions-framework = "^3.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.3.0"
+ruff = "^0.0.272"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
